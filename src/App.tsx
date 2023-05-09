@@ -1,12 +1,24 @@
 
+import { pagina01 } from "./assets";
 import { Header } from "./components/Header"
 import { Revista } from "./components/Revista"
-
+import { Helmet } from 'react-helmet';
 function App() {
 
 
   return (
     <>
+    <Helmet>
+      <title>ALN - Informe de Trabajo</title>‍
+      <meta name="description" content="Visita el sitio web de informe de trabajo de la diputada Alejandra López Noriega y mantente informado sobre las últimas actividades y logros en el estado de Sonora, México. Descubre los proyectos, iniciativas y propuestas que están ayudando a transformar la región. Obtén acceso a informes detallados, noticias y actualizaciones en tiempo real de la labor legislativa y social de la diputada. ¡Únete a la comunidad que está construyendo un mejor futuro para Sonora!" />              
+      <meta property="og:title" content="ALN - Informe de Trabajo" />        
+      <meta property="og:description" content="Visita el sitio web de informe de trabajo de la diputada Alejandra López Noriega y mantente informado sobre las últimas actividades y logros en el estado de Sonora, México. Descubre los proyectos, iniciativas y propuestas que están ayudando a transformar la región. Obtén acceso a informes detallados, noticias y actualizaciones en tiempo real de la labor legislativa y social de la diputada. ¡Únete a la comunidad que está construyendo un mejor futuro para Sonora!" />        
+      <meta property="og:image" content={pagina01} />
+      <meta property="og:site_name" content="ALN - Informe de Trabajo" />
+      <meta property="og:locale" content="es_MX" />
+      <meta property="og:type" content="article" />
+
+    </Helmet>
     <Header />
     <div className="mt-12 grid place-items-center">
           <div className="bg-teal-100 w-1/2 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
