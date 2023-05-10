@@ -16,8 +16,10 @@ function App() {
       <meta property="og:image" content={pagina01} />
       <meta property="og:site_name" content="ALN - Informe de Trabajo" />
       <meta property="og:locale" content="es_MX" />
-      <meta property="og:type" content="article" />
-
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://informe.alejandralopeznoriega.com/" />
     </Helmet>
     <Header />
     <div className="mt-12 grid place-items-center">
